@@ -221,6 +221,7 @@ mod tests {
     fn test_secp256k1_verify() {
         // Explicit / external hashing
         let message_digest = Sha256::new().chain(MSG);
+
         let message_hash = message_digest.clone().finalize();
 
         // Signing
